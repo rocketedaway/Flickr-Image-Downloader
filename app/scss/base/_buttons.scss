@@ -1,0 +1,20 @@
+.button {
+	@extend %button;
+	@include appearance(none);
+	cursor: pointer;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: $button-default-bg;
+  	border: 1px solid darken($button-default-bg, 5);
+  	&:hover {
+		background-color: darken($button-default-bg, 10);
+	}
+	&.button-primary {
+		background-color: $button-primary-bg;
+		border-color: darken($button-primary-bg, 5);
+	}
+	&.button-primary:hover {
+		background-color: darken($button-primary-bg, 10);
+	}
+}

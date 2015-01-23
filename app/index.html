@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Downloader</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-serialize-object/dist/jquery.serialize-object.min.js"></script>
+</head>
+<body>
+	<div id="ui-main">
+		<header id="ui-header">
+			<div class="logo">
+				<img src="images/logo.png"/>
+				<h3>Simple HTTP Flickr <br> Image Downloader</h3>
+			</div>
+		</header>
+		<div id="ui-content">
+			<form>
+				<div class="form-group">
+					<label for="username">Flickr username</label>
+					<input name="username" type="text" placeholder="foobar"/>
+				</div>
+				<div class="form-group">
+					<div class="wrapper wrapper-stream">
+						<label for="stream">Stream</label>
+						<select name="stream">
+							<option value="all" disabled>All</option>
+							<option value="photostream">Photostream</option>
+							<option value="set" disabled>Album/Set</option>
+							<option value="favorites" disabled>Favorites</option>
+						</select>
+					</div>
+					<div class="wrapper wrapper-album hidden">
+						<label for="set-id">Album/Set ID</label>
+						<input name="set-id" type="text" placeholder="Blank for all albums/sets"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="destination">Destination directory</label>
+					<input name="destination" type="text" placeholder="images/foobar/albums"/>
+				</div>
+				<div class="form-group">
+					<input class="button button-primary" type="submit" value="Start download"/>
+					<div class="button form-reset">Reset</div>
+				</div>
+			</form>
+		</div>
+		<footer id="ui-footer">
+			<h6>Created By: <a href="mailto:randy@rwwebdesign.ca">Randy Wilander</a></h6>
+		</footer>
+		<div class="modal">	
+			<input class="modal-state" id="modal-activator" type="checkbox" />
+			<div class="modal-window">
+				<div class="modal-inner">
+					<h1>Downloading <img src="images/download-indicator.gif"/></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Main Script -->
+	<script src="js/main.js"></script>
+</body>
+</html>

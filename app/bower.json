@@ -1,0 +1,22 @@
+{
+  "name": "Flickr Image Downloader",
+  "version": "0.0.0",
+  "authors": [
+    "Randy Wilander <randy@rwwebdesign.ca>"
+  ],
+  "description": "Download images from Flickr photo streams.",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^1.11.1",
+    "jquery-serialize-object": "~2.4.3"
+  }
+}
