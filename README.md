@@ -2,6 +2,6 @@
 
 ### Currently in development. 
 
-Desktop application for downloading images from Flickr using their HTTPS API. No API keys required.
+Desktop application for downloading images from Flickr using their HTTPS API. 
 
-Documentation will come with first stable release.
+Created because my friend wanted a way to bulk download images from Flickr and I wanted to learn Node Webkit.
